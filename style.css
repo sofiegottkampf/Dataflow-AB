@@ -1,16 +1,22 @@
 html{
     background: rgb(196, 196, 190);
     font-family: 'Onest', sans-serif;
-    margin: 10px
+    margin: 100px
+}
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    font-size: 25px;
 }
 
 h1 {
     background: #7989caa6;
     color: #ffffff;
+    padding: 100px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #b5adad;
     overflow: hidden;
   }
   
@@ -72,11 +78,21 @@ input[type="submit"] {
 }
 
 table {
-    position: relative;  
+    position: auto; 
+    width: 50% 
 }
+th {
+    text-align: center;
+    height: 70px
+}
+
+td {
+    text-align: center;
+  }
 
 table th {
     border-bottom: 1px dotted black;
+    text-align: center;
 }
 
 table td {
