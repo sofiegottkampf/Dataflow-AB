@@ -1,11 +1,11 @@
 html{
-    background: beige;
-    font-family: 'Italiana', serif;
+    background: rgb(196, 196, 190);
+    font-family: 'Onest', sans-serif;
     margin: 10px
 }
 
 h1 {
-    background: #d2c0f2a6;
+    background: #7989caa6;
     color: #ffffff;
 }
 
@@ -16,7 +16,7 @@ img {
 form {
     border: 10px solid white;
     width: 500px;
-    padding: 30px;
+    padding: 40px;
     margin: 30px;
 }
 
@@ -57,6 +57,8 @@ table th {
 table td {
     border: 1px solid black;
     background: lightgrey;
+    height: 55px;
+    
 }
 
 table tr:nth-child(odd) {
