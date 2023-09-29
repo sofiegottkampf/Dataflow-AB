@@ -1,0 +1,64 @@
+html{
+    background: beige;
+    font-family: 'Italiana', serif;
+    margin: 10px
+}
+
+h1 {
+    background: #d2c0f2a6;
+    color: #ffffff;
+}
+
+img {
+    border-radius: 115px;
+}
+
+form {
+    border: 10px solid white;
+    width: 500px;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+.form-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-input {
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    padding: 3px;
+
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: white;
+    border: none;
+
+}
+
+table {
+    position: relative;
+    left: 25%;  
+}
+
+table th {
+    border-bottom: 1px dotted black;
+}
+
+table td {
+    border: 1px solid black;
+    background: lightgrey;
+}
+
+table tr:nth-child(odd) {
+    background: white
+}
