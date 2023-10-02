@@ -1,7 +1,9 @@
 html{
     background: rgb(196, 196, 190);
     font-family: 'Onest', sans-serif;
-    margin: 100px
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
 }
 
 .header {
@@ -52,7 +54,7 @@ form {
     border: 10px solid white;
     width: 500px;
     padding: 40px;
-    margin: 30px;
+    margin: 30px auto;
 }
 
 .form-label {
@@ -76,11 +78,11 @@ input[type="submit"] {
     font-size: 1rem;
     background: white;
     border: none;
-
+    margin-left: 150px;
 }
 
 table {
-    position: auto; 
+    display: inline-table;
     width: 50% 
 }
 th {
@@ -122,5 +124,8 @@ table tr:nth-child(odd) {
     display: inline-block;
     text-align: left;
   }
-  
-  
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
