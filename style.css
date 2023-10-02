@@ -3,17 +3,12 @@ html{
     font-family: 'Onest', sans-serif;
     margin: 100px
 }
+
 .header {
     background-color: #F1F1F1;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
-.center {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-    
-  }
 
 h1 {
     background: #7989caa6;
@@ -117,6 +112,15 @@ table tr:nth-child(odd) {
     float: left;
     width: 33.33%;
     padding: 5px;
+  }
+
+  div.container {
+    text-align: center;
+  }
+  
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
   }
   
   
