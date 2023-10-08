@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            //Skapa en funktion som gör två saker: ändrar färg och ändrar text.
+            function clickFunction(){
+                //Hämta våran p tagg och spara den i en variabel
+            let ourText = document.querySelector("p");
+            // Hämta våran Div via dens IDoch sparar den i en variabel
+        let ourDiv = document.querySelector("#color-changer");    
+       
+        // Ändra bakgrundsfärgen till ourDiv till grön
+        ourDiv.style.backgroundColor = "blue";
+        // Ändra text på ourText till "jag har ändrats!"
+        ourText.innerText = "Jag har ändrats!";
+        //let ourText.innerText = ourText.innerText
+    }
+// Koppla denna funktion till onclick
+</script>
+<style>
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(200, 255, 0);
+    }
+    </style>
+        
+    </head>
+    <body>
+        <p>Här är en  text</p>
+        <button onclick="clickFunction()">Klicka här</button>
+        <div id="color-changer"></div>
+    </body>
+</html>

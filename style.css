@@ -1,19 +1,32 @@
 html{
-    background: rgb(196, 196, 190);
-    font-family: 'Onest', sans-serif;
     margin: 0 auto;
     max-width: 1000px;
     text-align: center;
+    
+}
+#myDIV {
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    color: white;
+  }
+
+body {
+    background-color: rgb(196, 196, 190);
+    color: black;
+    font-family: 'Onest', sans-serif;
 }
 
 .header {
     background-color: #F1F1F1;
+    background: #7989caa6;
     text-align: center;
     font-size: 40px;
+    border-radius: 50px;
 }
 
 h1 {
-    background: #7989caa6;
+    
     color: #ffffff;
     padding: 100px;
 }
@@ -47,7 +60,8 @@ h1 {
 }
 
 img {
-    border-radius: 115px;
+    border-radius: 70px;
+    padding: 50px
 }
 
 form {
@@ -70,13 +84,14 @@ form {
     font-size: 18px;
     padding: 3px;
 }
+/* Knappen till "Kontakta oss" */
 
 input[type="submit"] {
     display: block;
-    margin-top: 10px;
+    margin-top: 25px;
     border-radius: 5px;
-    font-size: 1rem;
-    background: white;
+    font-size: 2rem;
+    background: #7989caa6;
     border: none;
     margin-left: 150px;
 }
@@ -101,13 +116,13 @@ table th {
 }
 
 table td {
-    border: 1px solid black;
+    border: 2px solid black;
     background: lightgrey;
     height: 55px;
 }
 
 table tr:nth-child(odd) {
-    background: white
+    background: white;
 }
 
 .column {
