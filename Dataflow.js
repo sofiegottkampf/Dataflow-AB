@@ -1,5 +1,5 @@
 
 function myFunction() {
-    document.getElementById("myDIV").style.backgroundColor = "lightblue";
-  }
+  document.body.style.backgroundColor = "white";
+}
 
