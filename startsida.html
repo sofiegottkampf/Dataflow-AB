@@ -1,10 +1,9 @@
 <html>
-  
-        
+
 <head>
-   
+
     <meta charset="UTF-8">
-    
+
     <title>DataFlow AB</title>
     <link rel="icon" type="image/x-icon" href="Bilder\favicon (1).ico">
     <link rel="stylesheet" href="style.css">
@@ -12,38 +11,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@200&display=swap" rel="stylesheet">
 
-
-
 </head>
 
-
-
 <body>
-    
-    <p>Byt Bakgrundsfärg här!</p>
-        <button onclick="clickFunction()">Klicka här</button>
-        <div id="color-changer"></div>
 
-       
-        
-    
+    <!--Byta bakgrundsfärg-knapp-->
+    <button type="button" onclick="myFunction()">Vit bakgrundsfärg - Klicka här!</button>
+    <script>
+        function myFunction() {
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    <!--Byta bakgrundsfärg-knapp-->
+    <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_backgroundcolor-->
+
     <header>
         <div class="header">
             <h1>DataFlow AB</h1>
-          </div>
-
-
+        </div>
     </header>
-    
-      
+
     <div class="topnav">
         <a class="active" href="startsida.html">Hem</a>
         <a href="omoss.html">Om Oss</a>
-       </div>
-       <br>
-    
+    </div>
+    <br>
+
+    <!--Digital klocka-->
+
+    <body onload="setInterval(() => {
+        let date = new Date();
+        let time = (date.getHours() % 12 || 12) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2) + ' ' + (date.getHours() >= 12 ? 'PM' : 'AM');
+        document.getElementById('clockDisplay').textContent = time;
+     }, 1000);">
+        <div id="clockDisplay"></div>
+        <!--Digital klocka-->
+        <!--https://www.tutorialspoint.com/how-to-design-digital-clock-using-javascript-->
+
         <img src="https://www.blastanalytics.com/wp-content/uploads/2019/06/dashboard-visual-header-1920x600.jpg"
-        width="900" height="300" alt="DataFlow"/>
+            width="900" height="300" alt="DataFlow" />
         <h2>Våra tjänster som vi erbjuder på DataFlow AB:</h2>
         <ul>
             <li>Branchanalys</li>
@@ -52,7 +58,7 @@
             <li>Programmering</li>
             <li>Konsultuppdrag</li>
         </ul>
-        
+
         <h2>Prislista för våra tjänster:</h2>
         <table>
             <tr>
@@ -80,22 +86,22 @@
                 <td>Konsultuppdrag</td>
                 <td>2200kr/h ex.moms</td>
             </tr>
-            </table>
-    <form>
-        <label for="contact-name" class="form-label">Ditt namn:</label>
-        <input ide="contact-name" class="form-input" type="text" placeholder="Namn">
+        </table>
+        <form>
+            <label for="contact-name" class="form-label">Ditt namn:</label>
+            <input ide="contact-name" class="form-input" type="text" placeholder="Namn">
 
-        <label for="contact-email" class="form-label">Din mejl:</label>
-        <input ide="contact-email" class="form-input" type="text" placeholder="Email">
+            <label for="contact-email" class="form-label">Din mejl:</label>
+            <input ide="contact-email" class="form-input" type="text" placeholder="Email">
 
-        <label for="contact-phone" class="form-label">Ditt telefonnummer:</label>
-        <input ide="contact-phone" class="form-input" type="text" placeholder="Telefon">
+            <label for="contact-phone" class="form-label">Ditt telefonnummer:</label>
+            <input ide="contact-phone" class="form-input" type="text" placeholder="Telefon">
 
-        <input type="submit" value="Kontakta oss" />
+            <input type="submit" value="Kontakta oss" />
 
-    </form>
-  
-</div>
-</body>
+        </form>
+
+        </div>
+    </body>
 
 </html>
