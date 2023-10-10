@@ -139,3 +139,10 @@ ul {
     display: inline-block;
     text-align: left;
 }  
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #b5adad;
+    color: white;
+  }
